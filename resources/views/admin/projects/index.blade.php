@@ -15,7 +15,7 @@
     <thead>
         <tr>
             <th scope="col">ID</th>
-            <th scope="col">Titolo</th>
+            <th scope="col">Title</th>
             <th scope="col">Image</th>
             <th scope="col">Languages</th>
             <th scope="col">Type</th>

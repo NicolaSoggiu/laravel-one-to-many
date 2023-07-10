@@ -55,6 +55,4 @@
         </div>
     </div>
 </div>
-
-{{-- {{ $types->links() }} --}}
 @endsection

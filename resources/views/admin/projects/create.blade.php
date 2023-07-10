@@ -6,7 +6,7 @@
         @csrf
 
         <div class="mb-3">
-            <label for="title" class="form-label">Titolo</label>
+            <label for="title" class="form-label">Title : </label>
             <input
                 type="text"
                 class="form-control @error('title') is-invalid @enderror"
@@ -20,7 +20,7 @@
         </div>
 
         <div class="mb-3">
-        <label for="type" class="form-label">Type</label>
+        <label for="type" class="form-label">Type : </label>
         <select class="form-select" aria-label="Default select example" name="type_id" class="form-control @error('type_id') is-invalid @enderror">
             <option selected>Choose a type...</option>
             @foreach($types as $type)
@@ -33,7 +33,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="url_image" class="form-label">Immagine</label>
+            <label for="url_image" class="form-label">Image</label>
             <input 
                 type="url"
                 class="form-control @error('url_image') is-invalid @enderror"
@@ -47,7 +47,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="repo" class="form-label">Nome repository</label>
+            <label for="repo" class="form-label">Repo name</label>
             <input
                 type="text"
                 class="form-control @error('repo') is-invalid @enderror"
@@ -61,7 +61,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="languages" class="form-label">Linguaggi</label>
+            <label for="languages" class="form-label">Languages</label>
             <input
                 type="text"
                 class="form-control @error('languages') is-invalid @enderror"
@@ -75,7 +75,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="description" class="form-label">Descrizione</label>
+            <label for="description" class="form-label">Description</label>
             <textarea
                 class="form-control @error('description') is-invalid @enderror"
                 id="description"
@@ -86,6 +86,6 @@
             </div>
         </div>
 
-        <button class="btn btn-primary">Salva</button>
+        <button class="btn btn-primary">Save</button>
     </form>
 @endsection

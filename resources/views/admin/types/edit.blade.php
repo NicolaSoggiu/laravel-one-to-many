@@ -34,7 +34,7 @@
             </div>
 
         <div class="mb-3">
-            <label for="url_image" class="form-label">Immagine</label>
+            <label for="url_image" class="form-label">Image</label>
             <input 
                 type="url"
                 class="form-control @error('url_image') is-invalid @enderror"
@@ -48,7 +48,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="repo" class="form-label">Nome repo</label>
+            <label for="repo" class="form-label">Repo repo</label>
             <input
                 type="text"
                 class="form-control @error('repo') is-invalid @enderror"
@@ -62,7 +62,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="languages" class="form-label">Linguaggi</label>
+            <label for="languages" class="form-label">Languages</label>
             <input
                 type="text"
                 class="form-control @error('languages') is-invalid @enderror"
@@ -77,7 +77,7 @@
 
 
         <div class="mb-3">
-            <label for="description" class="form-label">Descrizione</label>
+            <label for="description" class="form-label">Description</label>
             <textarea
                 class="form-control @error('description') is-invalid @enderror"
                 id="description"
@@ -88,6 +88,6 @@
             </div>
         </div>
 
-        <button class="btn btn-primary">Salva</button>
+        <button class="btn btn-primary">Save</button>
     </form>
 @endsection
