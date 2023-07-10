@@ -1,28 +1,6 @@
 @extends('admin.layouts.base')
 @section('contents')
-<h1 class="py-3 text-light">Types:</h1>
-
- {{-- @if (session('delete_success'))
-    @php $project = session('delete_success') @endphp
-    <div class="alert alert-danger">
-        The project "{{ $project->title }}" has been moved to trash can
-        <form
-            action="{{ route("admin.types.restore", ['project' => $project]) }}"
-                method="post"
-                class="d-inline-block"
-            >
-            @csrf
-            <button class="btn btn-warning">Restore</button>
-        </form>
-    </div>
-@endif
-
-@if (session('restore_success'))
-    @php $project = session('restore_success') @endphp
-    <div class="alert alert-success">
-        Project "{{ $project->title }}" has been restored
-    </div>
-@endif  --}}
+<h1 class="py-3">Types:</h1>
 
 
 
@@ -42,15 +20,7 @@
                 <td>
                     <a class="btn btn-primary" href="{{ route('admin.types.show', ['type' => $type]) }}">View</a>
                 </td>
-                {{-- <td>
-                    <a class="btn btn-warning" href="{{ route('admin.types.edit', ['type' => $type]) }}">Edit</a>
-                </td>
-                <td>
-                    <button type="button" class="btn btn-danger js-delete" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="
-                    {{$type->id}}">
-                        Trash
-                    </button>
-                </td> --}}
+        
             </tr>
         @endforeach
     </tbody>
