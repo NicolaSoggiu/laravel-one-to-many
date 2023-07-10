@@ -12,5 +12,8 @@
         <div class="container d-flex justify-content-center">
             <img class="py-3" src="{{$project->url_image}}" alt="">
         </div>
+
+    <a class="btn btn-primary" href="{{ route("admin.projects.index") }}">Back to Index</a>
+
     </div>
 @endsection
